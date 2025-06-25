@@ -1,0 +1,13 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title=`${book_info.title}`
+    body 
+        h1=`${book_info.title} 책 정보`
+
+        p=`작가 : ${book_info.author}`
+        p=`출판년도 : ${book_info.publish_year}`
+
+        button(type="button" onclick="location.href='/'") 돌아가기 

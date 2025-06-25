@@ -1,0 +1,22 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Book Adder
+    body
+        form(action="/add" method='POST') 
+            label(for="title") 책 이름
+            input(type="text" name='title' id='title')
+            br
+
+            label(for="author") 저자 이름
+            input(type="text" name='author' id='author')
+            br
+
+            label(for="publish_year") 출판 연도
+            input(type="text" name='publish_year' id='publish_year')
+            br
+            br
+
+            button(type="submit") 등록하기

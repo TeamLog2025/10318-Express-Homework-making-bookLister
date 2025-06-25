@@ -1,0 +1,24 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title BOOK
+    body
+        h1 도서목록
+
+        table(border='1')
+            tr 
+                th 책 이름
+                th 저자
+                th 출판년도
+            
+            each value in books 
+                tr 
+                    td 
+                        a(href=`/book/${value.title}`)= value.title
+                    td=value.author
+                    td=value.publish_year
+
+        button(type="button" onclick="location.href='/add'") 도서 추가
+        
